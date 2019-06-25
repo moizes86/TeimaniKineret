@@ -13,6 +13,7 @@ mongoose.connect("mongodb://localhost/newapp");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('views'));
 app.use(express.static('public'));
+app.use('/:articles', express.static('public')); 
 app.use('/:articles/:article', express.static('public')); 
 app.set("view engine", "ejs"); // So we can use filename instead of filename.ejs
 
@@ -35,15 +36,15 @@ app.get('/articles', (req, res)=> {
 });
 
 app.get('/articles/article1', (req, res)=> {
-    res.render('article1');
+    res.render('articles/article1');
 });
 
 app.get('/articles/article2', (req, res)=> {
-    res.render('article2');
+    res.render('articles/article2');
 });
 
 app.get('/articles/article3', (req, res)=> {
-    res.render('article3');
+    res.render('articles/article3');
 });
 
 app.get('/names', (req, res)=> {
