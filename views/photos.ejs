@@ -1,0 +1,30 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+<section id="gallery" class="section">
+    <div class="container my-5">
+        <div class="d-flex justify-content-center mb-3">
+            <h1> תמונות <i class="fas fa-camera-retro"></i></h1>
+        </div>
+        <hr class="my-4">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                    <div class="gallery_product col-lg-4 col-md-6 col-xs-6">
+                            <div class="card my-1">
+                                <img src="http://temaneikineret.org.il/gal_life/images/5.jpg" class="img-fluid" data-toggle="modal" data-target=".bd-example-modal-lg alt="Responsive image">
+                            </div>
+                        </div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-gallery row">
+        </div>
+    </div>
+</section>
+
+<script src="js/photos.js"></script>
+
+<% include partials/footer %>

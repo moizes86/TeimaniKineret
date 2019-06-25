@@ -1,0 +1,21 @@
+@media only screen and (max-width: 767px) {
+   .navbar-nav .nav-item .nav-link, .navbar-nav .nav-item .nav-link:hover {
+      border: none;
+   }
+   #header h3 {
+      font-size: calc(2vw + 2vh);
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .main-content>h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   .article .card  {
+      padding: 4% 15%;
+   }
+}
