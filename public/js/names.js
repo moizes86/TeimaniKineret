@@ -1,9 +1,5 @@
 
 
-// console.log(nameList);
-
-
-
 (() => {
     const nameList = [
 
@@ -58,8 +54,8 @@
 
     nameList.forEach(e => {
         let x = `
-                <div class="d-flex col-sm-6 col-md-4 justify-content-start">
-                    <p class=""> ${e} </p>
+                <div class="d-flex col-sm-6 col-md-4 col-xl-3 align-items-center card text-center">
+                    <p class="name-box"> ${e} </p>
                 </div>
         `
         document.querySelector('.name-list').insertAdjacentHTML('afterbegin', x);

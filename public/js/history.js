@@ -98,21 +98,21 @@
 
     history_content.forEach(e => {
         let x = `
-        <div class="d-flex mb-3">
-             <div class="content text-justify text-md-right ml-5 justify-content-sm-center">
-                 <h3 class="">${e.headline}</h3>
+        <div class="d-flex mb-lg-1">
+             <div class="text-lg-right pl-md-5">
+                 <h3 class="text-md-right text-center">${e.headline}</h3>
                  <p class=""> &nbsp; &nbsp; ${e.content}</p>
              </div>
 
-             <div class="quote d-none d-md-flex col-4 px-4 text-right align-items-center font-italic">
+             <div class="quote notepaper d-none d-md-flex col-4 px-4 text-right align-items-center font-italic">
                  <blockquote>
-                     <div class="icon mx-n2"><ion-icon name="quote"></ion-icon></div>
+                     <div class="icon mx-n2 pt-3"><ion-icon name="quote"></ion-icon></div>
                      <p> &nbsp; ${e.quote}</p>
                      <div class="d-flex justify-content-end icon mx-n2"><ion-icon name="quote"></ion-icon></div>
                     </blockquote>
              </div>
         </div>
-        <hr class="my-5">
+        <hr class="my-lg-3">
          `
         document.querySelector('#history_content').insertAdjacentHTML('afterbegin', x);
     });
