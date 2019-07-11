@@ -16,6 +16,10 @@ html, body {
     padding-bottom: 70px;
 }
 
+.section >.container {
+    border: 1px solid rgb(197, 201, 105);
+}
+
 .wrapper {
     padding: 0;
     min-height: 102.6%;
@@ -78,7 +82,8 @@ body.preloader-site {
 }
 
 #header h3 {
-    background-color: #cca146;;
+    background-color: #cca146;
+    ;
     padding: 15px 0;
     color: white;
     margin-bottom: 1px;
@@ -177,7 +182,6 @@ footer div>a:hover {
     background-color: #F0F8FF;
 }
 
-
 .main-content .content_right {
     border-left: 1px solid white;
 }
@@ -191,7 +195,7 @@ footer div>a:hover {
 }
 
 .main-content h5 {
-    background-color:#cca146;
+    background-color: #cca146;
     color: white;
     font-family: 'Secular One', sans-serif;
     /* font-size: 1.1rem; */
@@ -241,7 +245,7 @@ footer div>a:hover {
 
 /* ARTICLE 3 */
 
-#kineret-sign p{
+#kineret-sign p {
     font-family: Guttman Haim;
     /* font-size: 1.2rem; */
     margin-block-end: 0;
@@ -296,7 +300,7 @@ footer div>a:hover {
     box-sizing: border-box;
     -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
-  }
+}
 
 /*========= MODAL =========*/
 
@@ -357,3 +361,8 @@ footer div>a:hover {
     font-size: 1rem;
 }
 
+/*========= Name Lists =========*/
+
+.name-list-moved div p {
+    margin: 0;
+}
