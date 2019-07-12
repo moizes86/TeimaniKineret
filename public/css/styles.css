@@ -18,6 +18,7 @@ html, body {
 
 .section >.container {
     border: 1px solid rgb(197, 201, 105);
+    border-radius: 0.5rem;
 }
 
 .wrapper {
@@ -175,6 +176,7 @@ footer div>a:hover {
 
 .index-content {
     border: 1px solid rgb(197, 201, 105);
+    border-radius: 0.5rem;
     background-color: #F0F8FF;
 }
 
@@ -359,6 +361,10 @@ footer div>a:hover {
 
 #links a {
     font-size: 1rem;
+}
+
+#links h3 {
+    font-size: 1.3rem; 
 }
 
 /*========= Name Lists =========*/
