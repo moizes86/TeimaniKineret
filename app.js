@@ -65,6 +65,14 @@ app.get('/photos', (req, res)=> {
     res.render("photos");
 });
 
+app.get('/photos/life-in-kineret', (req, res)=> {
+    res.render("photo-albums/life-in-kineret");
+});
+
+app.get('/photos/kineret-cemetery', (req, res)=> {
+    res.render("photo-albums/kineret-cemetery");
+});
+
 app.get('/links', (req, res)=> {
     res.render("links");
 });
