@@ -32,7 +32,7 @@ app.get('/history', (req, res)=> {
 });
 
 app.get('/articles', (req, res)=> {
-    res.render("articles");
+    res.render("articles-main");
 });
 
 
@@ -62,7 +62,7 @@ app.get('/names', (req, res)=> {
 });
 
 app.get('/photos', (req, res)=> {
-    res.render("photos");
+    res.render("photos-main");
 });
 
 app.get('/photos/life-in-kineret', (req, res)=> {
@@ -71,6 +71,10 @@ app.get('/photos/life-in-kineret', (req, res)=> {
 
 app.get('/photos/kineret-cemetery', (req, res)=> {
     res.render("photo-albums/kineret-cemetery");
+});
+
+app.get('/photos/bet-hamotor', (req, res)=> {
+    res.render("photo-albums/bet-hamotor");
 });
 
 app.get('/links', (req, res)=> {
