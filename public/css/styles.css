@@ -216,17 +216,17 @@ footer div>a:hover {
 
 /*========= ARTICLES =========*/
 
-.article p span {
+#articles p span {
     font-size: 10px;
     vertical-align: top;
     font-weight: bold;
 }
 
-.article p span:hover {
+#articles p span:hover {
     cursor: pointer;
 }
 
-.article .li-english {
+#article .li-english {
     direction: ltr;
 }
 

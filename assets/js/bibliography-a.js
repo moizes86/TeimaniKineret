@@ -31,7 +31,7 @@ footnotesArr.forEach((e, i) => {
 });
 
 // CLICK on a FOOTENOTE OPENS MODAL with RESPECTIVE CONTENT 
-$(".article div p span").click((e) => {
+$("#articles div p span").click((e) => {
   e.stopPropagation();
   isBiblioCollapsed.classList.value = "show";                         // open bibliography section so goToBtn would work
   clearNotes();                                             // Previous Note had been clicked? clear it and make room for a new one!
