@@ -14,8 +14,9 @@ mongoose.connect("mongodb://localhost/newapp");
 
 app.set("view engine", "ejs"); // So we can use filename instead of filename.ejs
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('views'));
 app.use(express.static('public'));
+app.use(express.static('views'));
+app.use(express.static('assets'));
 app.use('/articles', express.static('views/articles')); 
 app.use('/:articles/:article', express.static('views/articles')); 
 
