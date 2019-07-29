@@ -1,6 +1,8 @@
 //============= Setup ===================
 
-const express = require("express"),
+const 
+    PORT = process.env.PORT || 3000,
+    express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
     mongoose = require("mongoose");
@@ -81,6 +83,6 @@ app.get('/links', (req, res)=> {
     res.render("links");
 });
 
-app.listen('3000', () => {
+app.listen(PORT, () => {
     console.log('Connected');
 });
