@@ -379,3 +379,9 @@ footer div>a:hover {
 .name-list-moved div p {
     margin: 0;
 }
+
+.names-text-style{
+    text-shadow:-2px 3px 10px #000000d3;
+    color: green;
+
+}

@@ -164,17 +164,17 @@
         },
         {
             name: 'מרגלית שושנה',
-            father: 'דוד',
+            father: 'ישראל',
             year: '1926'
         },
         {
             name: 'מרגלית נתנאל',
-            father: 'דוד',
+            father: 'ישראל',
             year: '1927'
         },
         {
             name: 'מרגלית בת שבע',
-            father: 'דוד',
+            father: 'ישראל',
             year: '1930'
         }
 
@@ -319,7 +319,7 @@
     olimList.forEach(e => {
         let markup = `
                 <div class="d-flex col-sm-6 col-md-4 col-xl-3 align-items-center card text-center">
-                    <p class=" my-0"> ${e} </p>
+                    <p class="names-text-style my-1"> ${e} </p>
                 </div>
         `
         document.querySelector('.name-list-olim').insertAdjacentHTML('afterbegin', markup);
@@ -331,8 +331,8 @@
 
         let markup = `
                     <div class="d-flex col-6 col-md-4 col-xl-2 align-items-center card text-center flex-wrap">
-                        <p class="my-0 "> ${e.name} 
-                       <br>
+                        <p class="my-0 names-text-style"> ${e.name} </p>
+                       <p>
                        <b>אב:</b>
                       ${e.father}
                       <br>
@@ -348,10 +348,11 @@
     passedAwayList.forEach(e=>{
         let markup = `
                     <div class="d-flex col-6 col-md-4 col-xl-2 align-items-center card text-center flex-wrap">
-                        <p class="my-0"> ${e.name} 
-                       <br>
+                        <p class="names-text-style my-1"> ${e.name} </p>
+                       <p>
                        <b> אב:</b>
                       ${e.father}
+                      </p>
                     </div>
         `
         document.querySelector('.name-list-passed').insertAdjacentHTML('afterbegin', markup);
