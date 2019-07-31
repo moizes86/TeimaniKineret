@@ -255,7 +255,7 @@ footer div>a:hover {
 /*========= PHOTO GALLERY =========*/
 
 #gallery div a img {
-    max-height: 215px;
+    max-height: auto;
     padding: 1px;
     transition: 0.3s;
     border-radius: 3%;
